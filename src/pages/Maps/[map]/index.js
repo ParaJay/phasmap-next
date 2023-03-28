@@ -2,30 +2,16 @@ import { handleKeyDown, initKeys, initKeyValues, getNext } from "../../../utils/
 import React, {useEffect, useState} from "react";
 import {TransformWrapper, TransformComponent} from "react-zoom-pan-pinch"
 import { maps } from "../../../utils/consts.js";
-// import { useNavigate, useParams } from "react-router-dom";
 import { useRouter } from "next/router.js";
-import Nav from "@/components/Nav.js";
 
 const current = [];
 
 export default function Map () {
     const [loaded, setLoaded] = useState(false);
     const [image, setImage] = useState();
-    // const {selection} = useParams();
 
-    // if(!selection) return <></>
-
-    const [random, setRandom] = useState(0);
     const router = useRouter();
     const map = router.query.map;
-
-    function forceUpdate() {
-        let r = random;
-
-        while(r === random) r = Math.random();
-
-        setRandom(r);
-    }
 
     function Button(props) { return <button onClick={props.onclick}>{props.text}</button> }
 
@@ -40,8 +26,6 @@ export default function Map () {
         current[0] = map;
 
         router.push("/Maps/" + map);
-
-        // forceUpdate();
     }
 
     function change(am) {
