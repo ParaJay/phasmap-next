@@ -1,6 +1,6 @@
 import { readInfo, toUnSafeArray } from "./utils";
 import React from "react";
-import { Tooltip } from "react-tooltip";
+import { Tooltip } from "@mui/material";
 
 var expected = 0;
 var processed = 0;
@@ -187,8 +187,10 @@ export function PhasLabel(props) {
         
     return (
         <>
-            <p className={props.className} id={text} value={text} data-tooltip-id={text} data-tooltip-content={props.tooltip} onClick={props.onClick}>{text}</p>
-            <Tooltip arrow text="emem" id={text}/>
+            <Tooltip title={props.tooltip} placement="top">
+            <p className={props.className} id={text} value={text} onClick={props.onClick}>{text}</p>
+            </Tooltip>
+            
         </>
     )
 }

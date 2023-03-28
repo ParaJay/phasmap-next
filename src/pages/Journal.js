@@ -1,7 +1,7 @@
 import { evidenceMap, ghosts, info, PhasLabel } from "@/utils/consts";
-import { stripURL, handleKeyDown, initKeyValues, initKeys, capitalize, br } from "@/utils/utils.js";
+import { handleKeyDown, initKeyValues, initKeys, capitalize, br } from "@/utils/utils.js";
 import { useEffect, useState } from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 import Button from '@mui/material/Button';
 
 //TODO: persist slider
@@ -354,6 +354,8 @@ export default function Journal() {
         selected = e.target.textContent;
         forceUpdate();
     }
+
+    console.log("pre-effect");
 
     useEffect(() => {
         if(!loaded) {
