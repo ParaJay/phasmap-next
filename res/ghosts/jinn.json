@@ -1,0 +1,16 @@
+{
+	"name": "Jinn",
+	"info": [
+		"Evidence: EMF 5, Freezing, Fingerprints",
+		"",
+		"Hunts from: 50%",
+		"",
+		"During hunt travels at 2.5 m/s until within 3 metres of targeted player",
+		"",
+		"Can lower sanity of all player within 3 metres of it by 25% (EMF 2 or 5 will be generated at the Fuse Box",
+		"",
+		"Cannot use abilities when the Fuse Box is off",
+		"",
+		"Will not turn off Fuse Box"
+	]
+}

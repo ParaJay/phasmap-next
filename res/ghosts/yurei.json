@@ -1,0 +1,14 @@
+{
+	"name": "Yurei",
+	"info": [
+		"Evidence: Ghost Orbs, Freezing, D.O.T.S",
+		"",
+		"Hunts from: 50%",
+		"",
+		"Ability to drop sanity of all players within 7.5 metres by 15% (this will close a randomly selected door if available in the ghost's current room, with a distinct delayed door shut sound)",
+		"",
+		"When Smudge Sticks are used on the Yurei it will prevent hunts, increase activity and will render it unable to leave its current room for 90 seconds",
+		"",
+		"During Ghost Event will drop player sanity by 0.4% (as opposed to 0.2%) also applies if within 10 metres during a hunt"
+	]
+}

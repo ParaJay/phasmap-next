@@ -1,0 +1,24 @@
+{
+	"name": "Banshee",
+	"info": [
+		"Evidence: Ghost Orbs, Fingerprints, D.O.T.S",
+		"",
+		"Hunts from: 50% target sanity (87% avg)",
+		"",
+		"Focuses on the same player until that player is killed or has left the game",
+		"",
+		"Using a paramic has a chance of causing Banshee shriek or wailing",
+		"",
+		"A Banshee will prefer to cause ghost events where it sings over other types of ghost events.",
+		"",
+		"If all of the following conditions are met:",
+		"\tThe ghost event is a singing event,",
+		"\tThe ghost event is targeted towards the hunt target, and",
+		"\tThe hunt target causes the Banshee to disappear prematurely (by going near it);",
+		"Then the hunt target's sanity will decrease by 15%, instead of the usual 10%",
+		"",
+		"Banshees only check target's sanity for initiating a hunt",
+		"",
+		"Banshees will often wander towards target when roaming"
+	]
+}

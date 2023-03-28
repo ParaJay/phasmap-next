@@ -1,0 +1,11 @@
+{
+    "name": "Photo Rewards",
+    "info": [
+        "@dec a = (5, 10, 20)",
+        "@dec b = (1, 2, 5)",
+        "@dec c = (1, 5, 10)",
+        "setInfo \"Ghost\" a",
+        "setMult b \"Cursed Item\" \"Fingerprint\" \"Footprints\" \"Interaction\" \"Dead Body\" \"Ghost Writing\" \"Salt Pile\" \"DOTS\"",
+        "setMult c \"Bone\" \"Dirty Water\" \"Used Crucifix\""
+    ]
+}

@@ -1,0 +1,26 @@
+{
+	"name": "Hantu",
+	"info": [
+		"Evidence: Fingerprints, Ghost Orbs, Freezing",
+		"",
+		"Always gives Freezing evidence in Nightmare",
+		"",
+		"Hunts from: 50%",
+		"",
+		"Cannot turn on Fuse Box",
+		"",
+		"Twice as likely to turn off Fuse Box",
+		"",
+		"Does not accelerate while maintaining line of sight",
+		"",
+		"When visible during a hunt will emit freezing breath if room temperature is lower than or equal to 3°C",
+		"",
+		"Movement Speed",
+		"15°C: 1.4 m/s",
+		"12°C: 1.75 m/s",
+		"9°C: 2.1 m/s",
+		"6°C: 2.3 m/s",
+		"3°C: 2.5 m/s",
+		"0°C: 2.7 m/s"
+	]
+}

@@ -1,0 +1,286 @@
+@font-face {
+	font-family: "October Crow";
+	src: url("./OctoberCrow.ttf");
+}
+
+#infoHeader {
+    text-align: center;
+    font-family: "October Crow";
+    font-size: 30px;
+}
+
+#text {
+    margin: 0px 12px;
+    resize: none;
+}
+
+.sub-wrapper {
+    width: 70%;
+}
+
+.wrapper, .sub-sub-wrapper, .info-wrapper, .grounded-wrapper, .grounded-center-row {
+    display: flex;
+    align-items: stretch;
+    
+    /* justify-content: center; */
+}
+
+.grounded-left, .grounded-right, .grounded-wrapper, .grounded-center, .grounded-center-left, .grounded-center-right, .grounded-center-row {
+    position: fixed;
+}
+
+.grounded-wrapper {
+    right: 5%;
+}
+
+.grounded-left {
+    right: 20%;
+}
+
+.grounded-right {
+    right: 5%;
+}
+
+.grounded-center-left {
+    left: 30%;
+}
+
+.grounded-center-right {
+    left: 50%;
+}
+
+.grounded-center, .grounded-center-row {
+    left: 40%;
+}
+
+.grounded-item {
+    position: relative;
+}
+
+.grounded-item-left {
+    width: 88px;
+    margin-right: 0%;
+}
+
+.sanity-label {
+    margin-top: 3%;
+}
+
+.grounded-item-right {
+    width: 140px;
+    margin-left: 0%;
+}
+
+.info-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.info-button {
+    width: 100%;
+    min-height: 100%;
+}
+
+#sliderLabel {
+    text-align: center;
+}
+
+.jleft, .jright, .jcenter, .jtop, .tbottom {
+    padding: 0px 60px;
+}
+
+.btns-left, .btns-right, .jleft, .jright, .jcenter, .jtop, .tbottom, .photo-rando-right, .grounded-left, .grounded-right {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    color: rgb(202, 201, 201);
+}
+
+textarea, body {
+    background-color: rgb(60, 63, 65);
+    border-color: rgb(94, 97, 98);
+}
+
+input {
+    accent-color: rgb(48, 50, 52);
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+button, label, .button-style {
+    margin: 6px 6px;
+}
+
+.photo-rando-item {
+    height: 4.3vh;
+    text-align: center;
+    /* margin: 3px 16; */
+}
+
+.photo-rando-item2 {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    width: 30px;
+    text-align: center;
+}
+
+.photo-rando-item2 {
+    height: 4.3vh;
+    padding: 5px 4px;
+    margin: 6px 6px;
+    text-align: center;
+    border-radius: 12%;
+}
+
+input {
+    margin: 8.75px 6px;
+}
+
+button, box, .button-style, Button {
+    border-radius: 12%;
+    background-color: rgb(78, 80, 82);
+    border-color: rgb(94, 97, 98);
+    padding: 5px 4px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+
+.dropdown-content, .photo-rando-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 30px;
+    text-align: center;
+    background-color: rgb(78, 80, 82);
+}
+
+.dropdown-content a, .photo-rando-dropdown-content a { padding: 5px 4px; }
+
+.dropdown-content a:hover, .navbar button:hover {background-color: darkcyan;}
+
+.dropdown:hover .dropdown-content, .photo-rando-dropbtn:hover .photo-rando-dropdown-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.img-wrapper {
+    display: grid;
+    height: 100%;
+}
+
+#canvas {
+    width: 80vh;
+    max-width: 100%;
+    margin: auto;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.infoButton {
+    color: rgb(202, 201, 201);
+}
+
+.selectedButton {
+    color: orange;
+}
+
+.phas-label, .journal-defs, .photo-rando-label, .separator {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(128, 128, 128);
+    padding: 4px 4px;
+    margin: 5px;
+}
+
+.photo-rando-label {
+    font-size: 20px;
+}
+
+.journal-defs {
+    font-family: "October Crow";
+}
+
+.journal-check-box {
+    /* margin: 8px; */
+    margin-top: 6%;
+}
+
+.journal-check-label {
+    margin: 4%;
+    text-align: center;
+}
+
+.journal-label {
+    color: rgb(202, 201, 201);
+    text-decoration: none;
+}
+
+.journal-selected {
+    color: orange;
+    text-decoration: none;
+}
+
+.journal-striked, .disabled {
+    color: rgb(128, 128, 128);
+    text-decoration: line-through;
+}
+
+.journal-blank {
+    color: rgb(60, 63, 65);
+    text-decoration: none;
+    background-color: rgb(60, 63, 65);
+    border: none;
+    visibility: hidden;
+}
+
+.journal-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-rando-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-rando-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.text-area {
+    width: 100vh;
+    height: 70vh;
+}
+
+.photo-rando-slider {
+    height: 2%;
+}
+
+.photo-rando-slider-b {
+    height: 3%;
+}
+
+.nav-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.right {
+    /* position: relative; */
+    right: 90%;
+}

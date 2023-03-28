@@ -1,0 +1,24 @@
+{
+	"name": "Professional",
+	"info": [
+		"Level Needed: 15",
+		"Cash Reward Mult: 3x",
+		"Experience Mult: 2x",
+		"Ghost Responsiveness Specified: No",
+		"Fuse Box shown on map: Yes",
+		"Fuse Box on at start: No",
+		"Doors open at start: Some",
+		"Setup time: None",
+		"Sanity Consumption Mult: 2x",
+		"Sanity pill restoration: 30%",
+		"Evidence given: 3",
+		"Can Ghost room change: Rarely",
+		"Ghost interactions: Uncommon",
+		"Ghost events: Common",
+		"Grace period at start of hunt: 3s",
+		"Hunt duration: 30 - 60s",
+		"Cursed hunt duration: 50 - 80s",
+		"Does kill ends hunt: Yes",
+		"Item insurance on death: 0%"
+	]
+}

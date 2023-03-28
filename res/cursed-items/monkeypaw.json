@@ -1,0 +1,25 @@
+{
+	"name": "Monkey Paw",
+	"info": [
+		"Grants a wish for those who ask it.",
+		"",
+		"Wishes can be found scattered inside Sunny Meadows and will be added to your Journal when found.",
+		"These are not required to use the paw but are just a permanent note to help you remember.",
+		"",
+		"Number of wishes corresponds to the difficulty or reward multiplier",
+		"\t0x - 1.9x Rewards: 5 Wishes",
+		"\t2x - 2.9x Rewards: 4 Wishes",
+		"\t3x or higher Rewards: 3 Wishes",
+		"",
+		"Wishes:",
+		"\tI wish to be sane",
+		"\tI wish to be safe",
+		"\tI wish to leave",
+		"\tI wish to see the ghost",
+		"\tI wish for activity",
+		"\tI wish to trap the ghost",
+		"\tI wish to revive my friend",
+		"\tI wish for knowledge",
+		"\tI wish for {weather}"
+	]
+}

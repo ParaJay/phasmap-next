@@ -1,0 +1,17 @@
+{
+	"name": "Poltergeist",
+	"info": [
+		"Evidence: Spirit Box, Fingerprints, Ghost Writing",
+		"",
+		"Hunts from: 50%",
+		"",
+		"Has ability where it throws multiple items at once (creates EMF reading 2 although the thrown items themselves generate the normal reading 3).",
+		"This decreases sanity of all players near ghost equal to the number of items thrown x 2% (works even with lights on)",
+		"",
+		"Cannot use ability if there are no items nearby",
+		"",
+		"100% to throw an object within range every 0.5s during hunt (default for ghosts is 50%",
+		"",
+		"Now has super throw instead of Oni"
+	]
+}

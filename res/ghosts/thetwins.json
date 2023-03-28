@@ -1,0 +1,18 @@
+{
+	"name": "The Twins",
+	"info": [
+		"Evidence: EMF 5, Spirit Box, Freezing",
+		"",
+		"Hunts from: 50%",
+		"",
+		"Decoy Twin cannot set off Motion Sensor, Freezing or Spirit Box but can give EMF 5",
+		"",
+		"Will choose to interact using its small radius (Main Twin), the larger radius (Decoy Twin) or both",
+		"",
+		"50/50 chance to initiate hunt from Main Twin or Decoy",
+		"",
+		"The Main Twin moves at 1.53 m/s (10% slower than normal ghosts) and the Decoy moves at 1.87 m/s (10% faster than normal ghosts)",
+		"",
+		"Crucifix will check only the Main Twin (even if the hunt is started at the Decoy on the opposite side of the map"
+	]
+}

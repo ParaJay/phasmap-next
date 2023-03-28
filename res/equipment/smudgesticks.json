@@ -1,0 +1,15 @@
+{
+	"name": "Smudge Sticks",
+	"info": [
+		"When lit will smoke for 6 seconds. Uses 6 attempts over these 6 seconds to apply effect (only applied once and do not stack)",
+		"",
+		"When the ghost is within 6 metres ghost activity will be increased and ghost will not be able to hunt for 90 seconds",
+		"(180 for Spirit and 60 for Demon)",
+		"",
+		"Will not prevent cursed hunts",
+		"",
+		"Cost: $15",
+		"",
+		"Max Amount: 4"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Motion Sensor",
+	"info": [
+		"Can be set off by Ghost or Player (dead or alive)",
+		"",
+		"Above eye-height means only ghost can set if off. Waist height is the safest",
+		"",
+		"Cost: $100",
+		"",
+		"Max Amount: 4",
+		"",
+		"Required Level: 6"
+	]
+}

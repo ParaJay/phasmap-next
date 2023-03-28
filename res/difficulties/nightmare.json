@@ -1,0 +1,25 @@
+{
+	"name": "Nightmare",
+	"info": [
+		"Level Needed: 20",
+		"Cash Reward Mult: 4x",
+		"Experience Mult: 2.5x",
+		"Ghost Responsiveness Specified: No",
+		"Fuse Box shown on map: No",
+		"Fuse Box on at start: No",
+		"Doors open at start: Many",
+		"Setup time: None",
+		"Sanity Consumption Mult: 2x",
+		"Sanity pill restoration: 25%",
+		"Evidence given: 2",
+		"Can Ghost room change: Occasionally",
+		"Ghost interactions: Uncommon",
+		"Ghost events: Common",
+		"Grace period at start of hunt: 2s",
+		"Hunt duration: 30 - 60s",
+		"Cursed hunt duration: 50 - 80s",
+		"Does kill ends hunt: No",
+		"Item insurance on death: 0%",
+		"Damaged Monitors: Sanity Monitor and Ghost Activity Monitor"
+	]
+}

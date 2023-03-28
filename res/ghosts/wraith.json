@@ -1,0 +1,12 @@
+{
+	"name": "Wraith",
+	"info": [
+		"Evidence: EMF 5, Spirit Box, D.O.T.S",
+		"",
+		"Hunts from: 50%",
+		"",
+		"When not hunting chance to teleport within 3 metres of a random player generating EMF reading 2 (25% chance for EMF 5). Cannot teleport during hunts",
+		"",
+		"Will not leave UV Footprints when stepping in Salt. Stepping in Salt temporarily increases Wraith's ghost activity"
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Glowstick",
+	"info": [
+		"Glows brightly for 1 minute then fades to half intensity over the next 10 seconds",
+		"",
+		"Cost: $20",
+		"",
+		"Max Amount: 2"
+	]
+}

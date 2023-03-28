@@ -1,0 +1,10 @@
+{
+	"name": "Revenant",
+	"info": [
+		"Evidence: Ghost Orbs, Freezing, Ghost Writing",
+		"",
+		"Hunts from: 50%",
+		"",
+		"If has line-of-sight of player it will move at 3 m/s if not then will move at 1 m/s. Does not accelerate with extended line-of-sight"
+	]
+}

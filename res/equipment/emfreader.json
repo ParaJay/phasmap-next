@@ -1,0 +1,26 @@
+{
+	"name": "EMF Reader",
+	"info": [
+		"EMF Level 5 is shown on the monitor as an increase of 3, 4 or 5",
+		"",
+		"EMF 1: Blue: Default",
+		"EMF 2: Green: Interacting with an object",
+		"EMF 3: Yellow: Thrown object",
+		"EMF 4: Orange: Ghost Event",
+		"EMF 5: Evidence (25% chance to appear instead of EMF 2 or 3)",
+		"",
+		"Has a range of 1.5 metres",
+		"",
+		"EMF readers within 10 metres of manifested ghost will malfunction and display between level 1 and 4 (15 metres for Raiju)",
+		"",
+		"Holding and EMF reader within 9 metres of a ghost during a hunt will attract it (2 metres for Yokai)",
+		"",
+		"EMF emissions last 20 seconds",
+		"",
+		"Cost: $45",
+		"",
+		"Max Amount: 2",
+		"",
+		"Is Starter: Yes"
+	]
+}

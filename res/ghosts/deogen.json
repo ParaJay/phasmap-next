@@ -1,0 +1,25 @@
+{
+	"name": "Deogen",
+	"info": [
+		"Evidence: Spirit Box, D.O.T.S, Ghost Writing",
+		"",
+		"Hunts from: 40%",
+		"",
+		"More likely to interact with D.O.T.S Projector and Ghost Writing Book",
+		"",
+		"Always has line of sight of players. Will pick nearest target during hunt and will refresh to repick occasionally",
+		"",
+		"Movement Speed",
+		">6 metres from player: 3 m/s",
+		"2.5 metres from player: 0.4 m/s",
+		"Between 2.5 - 6 metres: Will gradually get slower as it approaches",
+		"",
+		"Does not alter speed with line of sight",
+		"",
+		"Getting a Spirit Box response within 1 metre of Deogen has 33% chance to respond with unique heavy bull-like breathing",
+		"",
+		"Appears to blink faster during hunts (visible for longer intervals and invis for shorter intervals",
+		"",
+		"If the Deogen is smudged or is otherwise not chasing any player, its speed will remain at either its previous speed, or 1.6 m/s, whichever is lower"
+	]
+}

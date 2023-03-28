@@ -1,0 +1,18 @@
+{
+	"name": "Phantom",
+	"info": [
+		"Evidence: Spirit Box, Fingerprints, D.O.T.S",
+		"",
+		"Hunts from: 50%",
+		"",
+		"If a photo is taken of a Phantom during a Ghost Event, it will disappear for the rest of the event",
+		"",
+		"Has ability where it will choose a random player and travel to their location. This will create EMF reading 2 all over the previous location. During this time it will not produce any manifestation and will not hunt (unless prompted by Cursed Items)",
+		"",
+		"Being within 10 metres of a Phantom while it has line of sight will reduce player's sanity by approx 0.5% per second (applies during hunts and events)",
+		"",
+		"During a hunt, will flash visible every 1 to 2 seconds as opposed to 0.3 to 1 second",
+		"",
+		"The Phantom will be invisible in photos and the photo will feature no interference"
+	]
+}

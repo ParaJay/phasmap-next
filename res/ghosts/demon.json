@@ -1,0 +1,16 @@
+{
+	"name": "Demon",
+	"info": [
+		"Evidence: Fingerprints, Ghost Writing, Freezing",
+		"",
+		"Hunts from: 100% (ability), normal threshold is: 70%",
+		"",
+		"Demons have a minimum 20 second cooldown between hunts instead of the usual 25",
+		"",
+		"Usage of a Cursed Item where sanity drain is experienced will drain 20% less than other Ghosts",
+		"",
+		"Smudging a Demon will prevent hunts for 60 seconds as opposed to the normal 90 seconds",
+		"",
+		"Crucifix has an effective range of 5 metres instead of 3 metres"
+	]
+}

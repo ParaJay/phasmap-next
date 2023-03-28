@@ -1,0 +1,23 @@
+{
+	"name": "Raiju",
+	"info": [
+		"Evidence: EMF 5, Ghost Orbs, D.O.T.S",
+		"",
+		"Hunts from: 65% (near electronics), normal threshold: 50%",
+		"",
+		"Moves faster when near electronics apart from the following: ",
+		"Head Mounted Camera, Motion Sensor, Sound Sensor",
+		"Video Cameras and Photo Cameras that are thrown on the ground",
+		"D.O.T.S Projectors that are held or thrown (not place)",
+		"Objects in  the inventory (expect Flashlights and Strong Flashlights if they are turned on)",
+		"Building/structure lights",
+		"",
+		"Will interfere with electronics up to 15 metres away on the same floor (as opposed to the usual 10 metres)",
+		"",
+		"During hunts if within a certain distance of active electronic equipment it will move at a fix approx 2.5 m/s",
+		"The ranges depend on map size: ",
+		"Small Map: 6m",
+		"Medium Map: 8m",
+		"Large Map: 10m"
+	]
+}

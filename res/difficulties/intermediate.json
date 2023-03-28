@@ -1,0 +1,24 @@
+{
+	"name": "Intermediate",
+	"info": [
+		"Level Needed: 1",
+		"Cash Reward Mult: 2x",
+		"Experience Mult: 1.5x",
+		"Ghost Responsiveness Specified: Yes",
+		"Fuse Box shown on map: Yes",
+		"Fuse Box on at start: No",
+		"Doors open at start: Few",
+		"Setup time: 2m 30s",
+		"Sanity Consumption Mult: 1.5x",
+		"Sanity pill restoration: 35%",
+		"Evidence given: 3",
+		"Can Ghost room change: No",
+		"Ghost interactions: Common",
+		"Ghost events: Uncommon",
+		"Grace period at start of hunt: 4s",
+		"Hunt duration: 20 - 50s",
+		"Cursed hunt duration: 40 - 70s",
+		"Does kill ends hunt: Yes",
+		"Item insurance on death: 25%"
+	]
+}
