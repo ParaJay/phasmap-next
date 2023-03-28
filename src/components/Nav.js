@@ -5,33 +5,7 @@ import {unsafe_maps} from "../utils/consts";
 export default function Nav() {
     const maps = unsafe_maps;
 
-    const pages = ["Ghosts", "Maps", "Journal", "Cursed Items", "Equipment", "Difficulty", "Photo Randomizer", "Photo Rewards", "Stream"]
-
-    // const names = {"Index" : "Maps"};
-
-    // let mc = [], pc = [];
-
-    // for(let i = 0; i < maps.length; i++) {
-    //     if(typeof window !== "undefined") {
-    //         let map = maps[i];
-            
-    //         let p = "../Maps/" + map;
-
-    //         mc.push(<Link key={map} href={p}>{map}</Link>)
-    //     }
-    // }
-
-    // // for(let i = 0; i < pages.length; i++) {
-    //     let page = pages[i];
-
-    //     let link = <Link href={"../" + page}>
-    //         {pages}
-    //     </Link>
-    //     // let pg = pages[i];
-    //     // let n = names[pg] ? names[pg] : pg;
-    //     // let p = "/" + pg.toLowerCase().replace(" ", "");
-    //     // pc.push(<Link key={n + i} href={"../" + n}>{n}</Link>);
-    // }
+    const pages = ["Ghosts", "Maps", "Journal", "Cursed Items", "Equipment", "Difficulty", "Photo Randomizer", "Photo Rewards"]
 
     let hamburger = require("../../res/hamburger.png");
 
