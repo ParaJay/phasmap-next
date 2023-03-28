@@ -1,10 +1,8 @@
-import { initInfoState, handleKeyDown, capitalize, capitalizeAll } from "../utils/utils.js";
+import { initInfoState, handleKeyDown, capitalize } from "../utils/utils.js";
 import React, {useState, useEffect} from "react";
 import { info, InfoHeader, initInfo } from "../utils/consts.js";
-import { Tooltip } from "react-tooltip";
-import { Button } from "@mui/material";
+import { Button, Tooltip } from "@mui/material";
 import Link from "next/link";
-import { useRouter } from "next/router.js";
 
 const current = {}
 
@@ -13,12 +11,10 @@ function InfoButton(props) {
     let title = props.title;
     let text = props.text;
     return (
-        <>
-            <Button component={Link} href={"/" + capitalizeAll(title) + "/" + text}className={cn} id={text} onClick={() => {
+        <Tooltip title={text} placement="top">
+            <Button component={Link} href={"/" + capitalize(title) + "/" + text}className={cn} id={text} onClick={() => {
                 props.callback(text);
             }}
-            data-tooltip-id={text}
-            // data-tooltip-html={info[text].replaceAll("\n", "<br/>")}
             sx ={{
                 color: cn,
                 bgcolor: "rgb(78, 80, 82)",
@@ -32,15 +28,14 @@ function InfoButton(props) {
                 // width: "100%",
 
             }}
-            >{text}</Button>
-
-            <Tooltip id={text} title="he"/>
-        </>
+            >{text}
+            
+            </Button>
+        </Tooltip>
     )
 }
 
 export default function Info(props) {
-    const [random, setRandom] = useState(0);
     const [init, setInit] = useState(false);
 
     const title = props.title;
@@ -51,17 +46,6 @@ export default function Info(props) {
         current[title] = props.selected;
     }
 
-    console.log("Selected: " + props.selected);
-    console.log(current[title]);
-
-    function forceUpdate() {
-        let r = random;
-
-        while(r === random) r = Math.random();
-
-        setRandom(r);
-    }
-
     function select(sel) {
         current[title] = sel;
     }
@@ -70,10 +54,6 @@ export default function Info(props) {
         let selected = handleKeyDown(e, array, current[title]);
 
         select(selected);
-
-        if(props.callback) {
-            props.callback(selected);
-        }
     }
 
     useEffect(() => {
@@ -84,18 +64,12 @@ export default function Info(props) {
 
         if(Object.keys(info).length == 0) {
             initInfo();
+            setInit(true);
         }
 
         document.addEventListener("keydown", keyDown, false);
 
         if(!current || !current[title]) select(props.array[0]);
-
-        // select(props.selected);
-
-        // select(props.selected);
-
-        // if(props.selected) select(props.selected)
-        // else select(current[title]);
 
         return () => { document.removeEventListener("keydown", keyDown, false); }
     }, [current[title]]);
@@ -112,8 +86,6 @@ export default function Info(props) {
         }
     }
 
-    console.log(info);
-
     return (
         <div className="wrapper">       
             <div className="col-wrapper">
@@ -124,12 +96,12 @@ export default function Info(props) {
                 <div className="wrapper">
                     <div className="btns-left">
                         <br/><br/><br/><p className="breaker"/>
-                        {left}
+                        {init && left}
                     </div>
 
                     <div className="btns-right">
                         <br/><br/><br/><p className="breaker"/>
-                        {right}
+                        {init && right}
                     </div>
                 </div>
         </div>
