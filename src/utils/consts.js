@@ -1,9 +1,6 @@
-import { readInfo, toUnSafeArray } from "./utils";
+import { capitalizeAll, readInfo, toUnSafeArray } from "./utils";
 import React from "react";
 import { Tooltip } from "@mui/material";
-
-var expected = 0;
-var processed = 0;
 
 export const maps = [
     "bleasedale", "brownstone_high_school", "camp_woodwind", "edgefield", "grafton", "maple_lodge_campsite", "prison", 
@@ -40,27 +37,95 @@ export const photoRewards = [
     "Ghost", "Cursed Item", "Fingerprint", "Footprints", "Interaction", "Dead Body", "Ghost Writing", "Salt Pile", "DOTS", "Bone", "Dirty Water", "Used Crucifix"
 ];
 
+var loading = false;
+
 export const info = {};
 
-export function initInfo() {
-    expected = ghosts.length + equipment.length + cursedItems.length + difficulties.length;
-    processed = 0;
-    clearInfo();
+export async function initInfo() {
+    if(Object.keys(info).length > 0) return;
+    if(loading) return;
 
-    loadAll(ghosts, "ghosts");
-    loadAll(equipment, "equipment");
-    loadAll(cursedItems, "cursed-items");
-    loadAll(difficulties, "difficulties");
+    loading = true;
+
+    let data = await fetch("https://eu-west-1.aws.data.mongodb-api.com/app/data-kfohd/endpoint/PhasMap/G");
+    let json = await data.json();
+
+    loadGhosts(json.ghosts);
+    loadBasic(json.curseditems);
+    loadBasic(json.equipment);
+    loadBasic(json.difficulties, true);
+
     parse("photorewards", "photorewards");
+
+    loading = false;
 }
 
-function loadAll(array, dir) { array.forEach(e => loadInfo(e, dir)); }
+function loadGhosts(ghosts) {
+    for(let i = 0; i < ghosts.length; i++) {
+        let ghost = ghosts[i];
+        let inf = ghost.info;
+        let hmin = ghost.hunt_min + "%";
+        let hmax = ghost.hunt_max + "%";
+        let hminr = ghost.hunt_min_reason;
+        let hmaxr = ghost.hunt_max_reason;
 
-function loadInfo(el, dir) {
-    let e = readInfo(el.toLowerCase().replaceAll(" ", ""), dir);
+        if(hminr) hmin += (" (" + hminr + ")");
+        if(hmaxr) hmax += (" (" + hmaxr + ")");
 
-    info[el] = e;
-    processed++;
+        let huntInfo = hmin === hmax ? hmin : hmin + " - " + hmax;
+
+        inf.unshift("");
+        inf.unshift("Hunts from: " + huntInfo);
+        inf.unshift("");
+        inf.unshift("Evidence: " + ghost.evidence.toString().replaceAll(",", ", "));       
+
+        register(ghost.name, inf);
+    }
+}
+
+function loadBasic(objs, nosplit=false) {
+    for(let i = 0; i < objs.length; i++) {
+        let obj = objs[i];
+        let inf = obj.info;
+
+        let res = arrayify(obj, nosplit);
+
+        if(inf !== undefined) res = res.concat(inf);
+
+        register(obj.name, res);
+    }
+}
+
+function register(name, inf) {
+    let data = "";
+
+    inf.forEach((e) => {
+        data += (data.length > 0 ? "\n" : "") + e;
+    });
+
+    info[name] = data;
+}
+
+function arrayify(obj, nosplit=false) {
+    let keys = Object.keys(obj);
+    let res = [];
+
+    for(let i = 0; i < keys.length; i++) {
+        let key = keys[i];
+
+        if(key.startsWith("_") || key === "info" || key === "name") continue;
+
+        if(res.length > 0 && !nosplit) res.push("");
+        res.push(capitalizeAll(key, "_").replaceAll("_", " ") + ": " + boolToYN(obj[key]));
+    }
+
+    return res;
+}
+
+function boolToYN(bool) {
+    if(bool === true) return "Yes";
+    if(bool === false) return "No";
+    return bool;
 }
 
 function isDeclaration(line) {
@@ -76,7 +141,6 @@ function isSetMult(line) {
 }
 
 function parse(el, dir) {
-    expected += 1;
     let e = readInfo(el.toLowerCase().replaceAll(" ", ""), dir)
     let lines = e.replaceAll("\r", "\n").replaceAll("\n\n", "\n").split("\n");
     let olines = lines.slice();
@@ -168,15 +232,9 @@ function parse(el, dir) {
             }              
         }
     }
-
-    processed++;
 }
 
-function clearInfo() { Object.keys(info).forEach(e => delete info[e]); }
-
-export function isLoading() { return expected > processed; }
-
-export function getProgress() { return processed + "/" + expected; }
+export function isLoading() { return loading; }
 
 export function InfoHeader(props) {
     return (<p id="infoHeader">{props.text}</p>);
