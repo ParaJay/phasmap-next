@@ -11,27 +11,24 @@ function InfoButton(props) {
     let title = props.title;
     let text = props.text;
     return (
-        <Tooltip title={text} placement="top">
-            <Button component={Link} href={"/" + capitalize(title) + "/" + text}className={cn} id={text} onClick={() => {
-                props.callback(text);
-            }}
-            sx ={{
-                color: cn,
-                bgcolor: "rgb(78, 80, 82)",
-                borderColor: "rgb(94, 97, 98)",
-                padding: "5px 4px",
-                borderRadius: "12%",
-                margin: "4px 6px",
-                textAlign: "center",
-                fontSize: "13px",
-                width: "200px"
-                // width: "100%",
+        <Button component={Link} href={"/" + capitalize(title) + "/" + text}className={cn} id={text} onClick={() => {
+            props.callback(text);
+        }}
+        sx ={{
+            color: cn,
+            bgcolor: "rgb(78, 80, 82)",
+            borderColor: "rgb(94, 97, 98)",
+            padding: "5px 4px",
+            borderRadius: "12%",
+            margin: "4px 6px",
+            textAlign: "center",
+            fontSize: "13px",
+            width: "200px"
 
-            }}
-            >{text}
-            
-            </Button>
-        </Tooltip>
+        }}
+        >{text}
+        
+        </Button>
     )
 }
 
