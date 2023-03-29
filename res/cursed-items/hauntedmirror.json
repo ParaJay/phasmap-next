@@ -1,8 +1,0 @@
-{
-	"name": "Haunted Mirror",
-	"info": [
-		"Drains sanity of player at rate of around 10% per second (including lowering and raising animation",
-		"",
-		"If player's sanity reaches 0 while using Mirror it will shatter and trigger a cursed hunt"
-	]
-}

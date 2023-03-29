@@ -1,8 +1,0 @@
-{
-	"name": "Voodoo Doll",
-	"info": [
-		"Each pin will drop sanity by 5% and cause an interaction (excpet heart pin which drops sanity by 10% and triggers cursed hunt)",
-		"",
-		"If player's sanity is less than the cost of the pressed pin, all pins will be pressed and a cursed hunt will be triggered"
-	]
-}
