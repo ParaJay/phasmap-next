@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react";
 import { info, InfoHeader, initInfo } from "../utils/consts.js";
 import { Button, Tooltip } from "@mui/material";
 import Link from "next/link";
+import { useRouter } from "next/router.js";
 
 const current = {}
 
@@ -34,6 +35,7 @@ function InfoButton(props) {
 
 export default function Info(props) {
     const [init, setInit] = useState(false);
+    const router = useRouter();
 
     const title = props.title;
 
@@ -48,19 +50,23 @@ export default function Info(props) {
     }
 
     function keyDown(e) {
+        console.log("e");
         let selected = handleKeyDown(e, array, current[title]);
+        console.log(selected);
 
         select(selected);
+
+        router.push("/" + capitalize(title) + "/" + selected);
     }
 
     useEffect(() => {
         if(!init) {
             initInfoState(array, title);
-            setInit(true);
-        }
 
-        if(Object.keys(info).length == 0) {
-            initInfo();
+            if(Object.keys(info).length == 0) {
+                initInfo();
+            }
+
             setInit(true);
         }
 
