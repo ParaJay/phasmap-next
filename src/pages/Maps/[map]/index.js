@@ -4,7 +4,9 @@ import {TransformWrapper, TransformComponent} from "react-zoom-pan-pinch"
 import { maps } from "../../../utils/consts.js";
 import { useRouter } from "next/router.js";
 
+//TODO: pre-load all maps
 const current = [];
+const mapStore = {};
 
 export default function Map () {
     const [loaded, setLoaded] = useState(false);
@@ -18,6 +20,14 @@ export default function Map () {
     function init() {
         initKeyValues(1);
         initKeys(maps);
+
+        for(let i = 0; i < maps.length; i++) {
+            let ml = maps[i].toLowerCase().replaceAll(" ", "_");
+            let toStore = require("../../../../res/maps/" + ml + ".png");
+
+            mapStore[maps[i]] = toStore;
+            mapStore[ml] = toStore;
+        }
     }
     
     function select(map) {
@@ -42,9 +52,7 @@ export default function Map () {
 
     useEffect(() => {
         async function getImage() {
-            let e = require("../../../../res/maps/" + current[0] + ".png");
-
-            setImage(e.default.src);
+            setImage(mapStore[current[0]].default.src);
         }
 
         if(!loaded) {
